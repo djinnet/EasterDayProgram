@@ -11,10 +11,11 @@ HolidayLibrary
 
 The design of the form contains of datetimepicker, button, and labels. 
 There is an easter icon in the resource folder.
+The text in the form is in Danish, but the code is in english.
 
 User manual:
 
-* Select a year in the year inputfield. There is a range from 1753 to 9998.
+* Select a year in the year inputfield. There is a limit from 1753 to 9998.
 
 * Then press the button with the text "Search for Easter Day".
 
