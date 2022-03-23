@@ -20,4 +20,8 @@ User manual:
 
 * The result should appear in large text.
 
+Image of software:
+![image](https://user-images.githubusercontent.com/9974608/159710002-f6a8c82e-2539-4286-b76c-5f6040c2bda5.png)
+
+
 Credit: Djinnet
