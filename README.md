@@ -9,8 +9,10 @@ App
 HolidayLibrary
 - class library which contains the calculation for easter
 
-The design of the form contains of datetimepicker, button, and labels. 
+The design of the form contains of datetimepicker, button, and labels.
+ 
 There is an easter icon in the resource folder.
+
 The text in the form is in Danish, but the code is in english.
 
 User manual:
