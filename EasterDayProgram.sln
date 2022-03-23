@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasterDayProgram.App", "EasterDayProgram.App\EasterDayProgram.App.csproj", "{DF1D7FFF-ECED-4402-98A1-6E0D64B0E03F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasterDayProgram.HolidayLibrary", "HolidayLibrary\EasterDayProgram.HolidayLibrary.csproj", "{299C222D-5130-4940-A1EC-DC0D24F1454B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF1D7FFF-ECED-4402-98A1-6E0D64B0E03F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF1D7FFF-ECED-4402-98A1-6E0D64B0E03F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF1D7FFF-ECED-4402-98A1-6E0D64B0E03F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF1D7FFF-ECED-4402-98A1-6E0D64B0E03F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{299C222D-5130-4940-A1EC-DC0D24F1454B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{299C222D-5130-4940-A1EC-DC0D24F1454B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{299C222D-5130-4940-A1EC-DC0D24F1454B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{299C222D-5130-4940-A1EC-DC0D24F1454B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6AFC58BC-EC69-4D25-8F22-5361DEB7C388}
+	EndGlobalSection
+EndGlobal
