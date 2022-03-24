@@ -25,8 +25,10 @@ namespace EasterDayProgram.App
             //Get year
             int year = dateTimePicker1.Value.Year;
 
+            bool orthodox = orthodoxCheckbox.Checked;
+
             //calculate year
-            DateTime EasterSunday = DatetimeUtility.GetEasterSundayWIKI(year);
+            DateTime EasterSunday = DatetimeUtility.GetEasterSunday(year, orthodox);
 
             //show the date in danish date format
             Result.Text = EasterSunday.ToString("dddd, dd MMMM yyyy", new CultureInfo("da-DK"));

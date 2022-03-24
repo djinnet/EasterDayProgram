@@ -33,13 +33,14 @@
             this.Result = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SearchForEaster = new System.Windows.Forms.Button();
+            this.orthodoxCheckbox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // labelInputYear
             // 
             this.labelInputYear.AutoSize = true;
             this.labelInputYear.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelInputYear.Location = new System.Drawing.Point(220, 11);
+            this.labelInputYear.Location = new System.Drawing.Point(147, 9);
             this.labelInputYear.Name = "labelInputYear";
             this.labelInputYear.Size = new System.Drawing.Size(127, 25);
             this.labelInputYear.TabIndex = 0;
@@ -59,7 +60,7 @@
             this.dateTimePicker1.CustomFormat = "yyyy";
             this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(233, 39);
+            this.dateTimePicker1.Location = new System.Drawing.Point(160, 37);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.ShowUpDown = true;
             this.dateTimePicker1.Size = new System.Drawing.Size(78, 32);
@@ -68,7 +69,7 @@
             // SearchForEaster
             // 
             this.SearchForEaster.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SearchForEaster.Location = new System.Drawing.Point(353, 30);
+            this.SearchForEaster.Location = new System.Drawing.Point(439, 25);
             this.SearchForEaster.Name = "SearchForEaster";
             this.SearchForEaster.Size = new System.Drawing.Size(183, 44);
             this.SearchForEaster.TabIndex = 4;
@@ -76,11 +77,23 @@
             this.SearchForEaster.UseVisualStyleBackColor = true;
             this.SearchForEaster.Click += new System.EventHandler(this.SearchForEaster_Click);
             // 
+            // orthodoxCheckbox
+            // 
+            this.orthodoxCheckbox.AutoSize = true;
+            this.orthodoxCheckbox.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.orthodoxCheckbox.Location = new System.Drawing.Point(254, 37);
+            this.orthodoxCheckbox.Name = "orthodoxCheckbox";
+            this.orthodoxCheckbox.Size = new System.Drawing.Size(179, 29);
+            this.orthodoxCheckbox.TabIndex = 5;
+            this.orthodoxCheckbox.Text = "Ortodokse Påske?";
+            this.orthodoxCheckbox.UseVisualStyleBackColor = true;
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(737, 204);
+            this.Controls.Add(this.orthodoxCheckbox);
             this.Controls.Add(this.SearchForEaster);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.Result);
@@ -101,5 +114,6 @@
         private Label Result;
         private DateTimePicker dateTimePicker1;
         private Button SearchForEaster;
+        private CheckBox orthodoxCheckbox;
     }
 }
