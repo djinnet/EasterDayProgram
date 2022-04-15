@@ -57,15 +57,80 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="NavBarPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="NavBarPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 0</value>
+  </data>
+  <data name="NavBarPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>765, 38</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="NavBarPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="LanguagesDropdown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>593, 9</value>
+  </data>
+  <data name="LanguagesDropdown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
+  </data>
+  <data name="LanguagesDropdown.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="QuitButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="QuitButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="QuitButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>732, 0</value>
+  </data>
+  <data name="QuitButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 38</value>
+  </data>
+  <data name="QuitButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="TitleLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TitleLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14pt, style=Bold</value>
+  </data>
+  <data name="TitleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 9</value>
+  </data>
+  <data name="TitleLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>296, 25</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
+  <data name="TitleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="TitleLabel.Text" xml:space="preserve">
     <value>Software for at søge efter påske</value>
+  </data>
+  <data name="SidebarPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LogoPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="LogoPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 100</value>
+  </data>
+  <data name="LogoPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="SearchForEaster.Text" xml:space="preserve">
     <value>Søg efter Påskedag</value>
+  </data>
+  <data name="labelInputYear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 12</value>
   </data>
   <data name="labelInputYear.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 25</value>
@@ -73,10 +138,97 @@
   <data name="labelInputYear.Text" xml:space="preserve">
     <value>Indtaste årtal</value>
   </data>
+  <data name="SelectYear.CustomFormat" xml:space="preserve">
+    <value>yyyy</value>
+  </data>
+  <data name="SelectYear.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14pt</value>
+  </data>
+  <data name="SelectYear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 12</value>
+  </data>
+  <data name="SelectYear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 32</value>
+  </data>
+  <data name="SelectYear.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="orthodoxCheckbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 57</value>
+  </data>
   <data name="orthodoxCheckbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>179, 29</value>
   </data>
   <data name="orthodoxCheckbox.Text" xml:space="preserve">
     <value>orthodokse påske</value>
+  </data>
+  <data name="InputPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 109</value>
+  </data>
+  <data name="InputPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 145</value>
+  </data>
+  <data name="InputPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="SidebarPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="SidebarPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="SidebarPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="SidebarPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 254</value>
+  </data>
+  <data name="SidebarPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="SidebarPanel.WrapContents" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Logo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 9</value>
+  </data>
+  <data name="Logo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 73</value>
+  </data>
+  <data name="Logo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="Logo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="LogoName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LogoName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 28pt, style=Bold</value>
+  </data>
+  <data name="LogoName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 18</value>
+  </data>
+  <data name="LogoName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 51</value>
+  </data>
+  <data name="LogoName.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LogoName.Text" xml:space="preserve">
+    <value>SAP</value>
+  </data>
+  <data name="ResultPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ResultPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 38</value>
+  </data>
+  <data name="ResultPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>765, 216</value>
+  </data>
+  <data name="ResultPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
 </root>

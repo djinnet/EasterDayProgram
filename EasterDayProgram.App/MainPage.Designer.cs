@@ -28,166 +28,222 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
             this.Result = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.NavBarPanel = new System.Windows.Forms.Panel();
+            this.LanguagesDropdown = new System.Windows.Forms.ComboBox();
+            this.QuitButton = new System.Windows.Forms.PictureBox();
+            this.TitleLabel = new System.Windows.Forms.Label();
+            this.SidebarPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.LogoPanel = new System.Windows.Forms.Panel();
+            this.Logo = new System.Windows.Forms.PictureBox();
+            this.LogoName = new System.Windows.Forms.Label();
+            this.InputPanel = new System.Windows.Forms.Panel();
             this.SearchForEaster = new System.Windows.Forms.Button();
             this.labelInputYear = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.SelectYear = new System.Windows.Forms.DateTimePicker();
             this.orthodoxCheckbox = new System.Windows.Forms.CheckBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.ResultPanel = new System.Windows.Forms.Panel();
+            this.NavBarPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.QuitButton)).BeginInit();
+            this.SidebarPanel.SuspendLayout();
+            this.LogoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
+            this.InputPanel.SuspendLayout();
+            this.ResultPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Result
             // 
-            resources.ApplyResources(this.Result, "Result");
+            this.Result.Font = new System.Drawing.Font("Segoe UI", 52F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Result.Location = new System.Drawing.Point(6, 71);
             this.Result.Name = "Result";
+            this.Result.Size = new System.Drawing.Size(733, 129);
+            this.Result.TabIndex = 0;
+            this.Result.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panel1
+            // NavBarPanel
             // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(254)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Name = "panel1";
+            this.NavBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(254)))), ((int)(((byte)(255)))));
+            this.NavBarPanel.Controls.Add(this.LanguagesDropdown);
+            this.NavBarPanel.Controls.Add(this.QuitButton);
+            this.NavBarPanel.Controls.Add(this.TitleLabel);
+            this.NavBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.NavBarPanel.Location = new System.Drawing.Point(215, 0);
+            this.NavBarPanel.Name = "NavBarPanel";
+            this.NavBarPanel.Size = new System.Drawing.Size(751, 38);
+            this.NavBarPanel.TabIndex = 3;
             // 
-            // comboBox1
+            // LanguagesDropdown
             // 
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.LanguagesDropdown.FormattingEnabled = true;
+            this.LanguagesDropdown.Location = new System.Drawing.Point(593, 9);
+            this.LanguagesDropdown.Name = "LanguagesDropdown";
+            this.LanguagesDropdown.Size = new System.Drawing.Size(121, 23);
+            this.LanguagesDropdown.TabIndex = 2;
+            this.LanguagesDropdown.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // pictureBox2
+            // QuitButton
             // 
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::EasterDayProgram.App.Properties.Resources.IconClose;
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.QuitButton.BackColor = System.Drawing.Color.Transparent;
+            this.QuitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.QuitButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.QuitButton.Image = global::EasterDayProgram.App.Properties.Resources.IconClose;
+            this.QuitButton.Location = new System.Drawing.Point(718, 0);
+            this.QuitButton.Name = "QuitButton";
+            this.QuitButton.Size = new System.Drawing.Size(33, 38);
+            this.QuitButton.TabIndex = 1;
+            this.QuitButton.TabStop = false;
+            this.QuitButton.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // label1
+            // TitleLabel
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            this.TitleLabel.AutoSize = true;
+            this.TitleLabel.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TitleLabel.Location = new System.Drawing.Point(6, 9);
+            this.TitleLabel.Name = "TitleLabel";
+            this.TitleLabel.Size = new System.Drawing.Size(170, 25);
+            this.TitleLabel.TabIndex = 0;
+            this.TitleLabel.Text = "Software til påske";
             // 
-            // flowLayoutPanel1
+            // SidebarPanel
             // 
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(170)))));
-            this.flowLayoutPanel1.Controls.Add(this.panel3);
-            this.flowLayoutPanel1.Controls.Add(this.panel4);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.SidebarPanel.AutoSize = true;
+            this.SidebarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(170)))));
+            this.SidebarPanel.Controls.Add(this.LogoPanel);
+            this.SidebarPanel.Controls.Add(this.InputPanel);
+            this.SidebarPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SidebarPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.SidebarPanel.Location = new System.Drawing.Point(0, 0);
+            this.SidebarPanel.Name = "SidebarPanel";
+            this.SidebarPanel.Size = new System.Drawing.Size(215, 261);
+            this.SidebarPanel.TabIndex = 4;
+            this.SidebarPanel.WrapContents = false;
             // 
-            // panel3
+            // LogoPanel
             // 
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Name = "panel3";
+            this.LogoPanel.Controls.Add(this.Logo);
+            this.LogoPanel.Controls.Add(this.LogoName);
+            this.LogoPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LogoPanel.Location = new System.Drawing.Point(3, 3);
+            this.LogoPanel.Name = "LogoPanel";
+            this.LogoPanel.Size = new System.Drawing.Size(209, 100);
+            this.LogoPanel.TabIndex = 10;
             // 
-            // pictureBox1
+            // Logo
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::EasterDayProgram.App.Properties.Resources.easter_egg_with_different_lines_design;
-            this.pictureBox1.Image = global::EasterDayProgram.App.Properties.Resources.easter_egg_with_different_lines_design;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            this.Logo.BackColor = System.Drawing.Color.Transparent;
+            this.Logo.BackgroundImage = global::EasterDayProgram.App.Properties.Resources.easter_egg_with_different_lines_design;
+            this.Logo.Image = global::EasterDayProgram.App.Properties.Resources.easter_egg_with_different_lines_design;
+            this.Logo.Location = new System.Drawing.Point(108, 9);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(78, 73);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logo.TabIndex = 1;
+            this.Logo.TabStop = false;
             // 
-            // label2
+            // LogoName
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Name = "label2";
+            this.LogoName.AutoSize = true;
+            this.LogoName.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LogoName.ForeColor = System.Drawing.Color.White;
+            this.LogoName.Location = new System.Drawing.Point(9, 18);
+            this.LogoName.Name = "LogoName";
+            this.LogoName.Size = new System.Drawing.Size(93, 51);
+            this.LogoName.TabIndex = 0;
+            this.LogoName.Text = "SAP";
             // 
-            // panel4
+            // InputPanel
             // 
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Controls.Add(this.SearchForEaster);
-            this.panel4.Controls.Add(this.labelInputYear);
-            this.panel4.Controls.Add(this.dateTimePicker1);
-            this.panel4.Controls.Add(this.orthodoxCheckbox);
-            this.panel4.Name = "panel4";
+            this.InputPanel.Controls.Add(this.SearchForEaster);
+            this.InputPanel.Controls.Add(this.labelInputYear);
+            this.InputPanel.Controls.Add(this.SelectYear);
+            this.InputPanel.Controls.Add(this.orthodoxCheckbox);
+            this.InputPanel.Location = new System.Drawing.Point(3, 109);
+            this.InputPanel.Name = "InputPanel";
+            this.InputPanel.Size = new System.Drawing.Size(209, 145);
+            this.InputPanel.TabIndex = 11;
             // 
             // SearchForEaster
             // 
-            resources.ApplyResources(this.SearchForEaster, "SearchForEaster");
             this.SearchForEaster.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(94)))), ((int)(((byte)(106)))));
+            this.SearchForEaster.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.SearchForEaster.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(94)))), ((int)(((byte)(106)))));
+            this.SearchForEaster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SearchForEaster.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.SearchForEaster.ForeColor = System.Drawing.Color.White;
+            this.SearchForEaster.Location = new System.Drawing.Point(0, 92);
             this.SearchForEaster.Name = "SearchForEaster";
+            this.SearchForEaster.Size = new System.Drawing.Size(209, 53);
+            this.SearchForEaster.TabIndex = 0;
+            this.SearchForEaster.Text = "Søg efter påskedag";
             this.SearchForEaster.UseVisualStyleBackColor = false;
             this.SearchForEaster.Click += new System.EventHandler(this.SearchForEaster_Click);
             // 
             // labelInputYear
             // 
-            resources.ApplyResources(this.labelInputYear, "labelInputYear");
+            this.labelInputYear.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelInputYear.ForeColor = System.Drawing.Color.White;
+            this.labelInputYear.Location = new System.Drawing.Point(9, 12);
             this.labelInputYear.Name = "labelInputYear";
+            this.labelInputYear.Size = new System.Drawing.Size(101, 25);
+            this.labelInputYear.TabIndex = 1;
+            this.labelInputYear.Text = "Indtaste årtal";
             // 
-            // dateTimePicker1
+            // SelectYear
             // 
-            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.ShowUpDown = true;
+            this.SelectYear.CustomFormat = "yyyy";
+            this.SelectYear.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SelectYear.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.SelectYear.Location = new System.Drawing.Point(122, 12);
+            this.SelectYear.Name = "SelectYear";
+            this.SelectYear.ShowUpDown = true;
+            this.SelectYear.Size = new System.Drawing.Size(78, 32);
+            this.SelectYear.TabIndex = 7;
             // 
             // orthodoxCheckbox
             // 
-            resources.ApplyResources(this.orthodoxCheckbox, "orthodoxCheckbox");
+            this.orthodoxCheckbox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.orthodoxCheckbox.ForeColor = System.Drawing.Color.White;
+            this.orthodoxCheckbox.Location = new System.Drawing.Point(9, 57);
             this.orthodoxCheckbox.Name = "orthodoxCheckbox";
+            this.orthodoxCheckbox.Size = new System.Drawing.Size(179, 29);
+            this.orthodoxCheckbox.TabIndex = 8;
+            this.orthodoxCheckbox.Text = "orthodokse påske?";
             this.orthodoxCheckbox.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // ResultPanel
             // 
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.Result);
-            this.panel2.Name = "panel2";
+            this.ResultPanel.BackColor = System.Drawing.Color.White;
+            this.ResultPanel.Controls.Add(this.Result);
+            this.ResultPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ResultPanel.Location = new System.Drawing.Point(215, 38);
+            this.ResultPanel.Name = "ResultPanel";
+            this.ResultPanel.Size = new System.Drawing.Size(751, 223);
+            this.ResultPanel.TabIndex = 5;
             // 
             // MainPage
             // 
-            resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(966, 261);
             this.ControlBox = false;
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.ResultPanel);
+            this.Controls.Add(this.NavBarPanel);
+            this.Controls.Add(this.SidebarPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainPage";
             this.Load += new System.EventHandler(this.MainPage_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.NavBarPanel.ResumeLayout(false);
+            this.NavBarPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.QuitButton)).EndInit();
+            this.SidebarPanel.ResumeLayout(false);
+            this.LogoPanel.ResumeLayout(false);
+            this.LogoPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
+            this.InputPanel.ResumeLayout(false);
+            this.ResultPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,19 +251,19 @@
 
         #endregion
         private Label Result;
-        private Panel panel1;
-        private FlowLayoutPanel flowLayoutPanel1;
-        private Panel panel2;
+        private Panel NavBarPanel;
+        private FlowLayoutPanel SidebarPanel;
+        private Panel ResultPanel;
         private CheckBox orthodoxCheckbox;
         private Button SearchForEaster;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker SelectYear;
         private Label labelInputYear;
-        private Label label1;
-        private Panel panel3;
-        private PictureBox pictureBox1;
-        private Label label2;
-        private Panel panel4;
-        private PictureBox pictureBox2;
-        private ComboBox comboBox1;
+        private Label TitleLabel;
+        private Panel LogoPanel;
+        private PictureBox Logo;
+        private Label LogoName;
+        private Panel InputPanel;
+        private PictureBox QuitButton;
+        private ComboBox LanguagesDropdown;
     }
 }

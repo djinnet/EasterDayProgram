@@ -128,9 +128,6 @@
   <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Software for search after Easter</value>
-  </data>
   <data name="labelInputYear.Text" xml:space="preserve">
     <value>Select year</value>
   </data>
@@ -139,5 +136,8 @@
   </data>
   <data name="SearchForEaster.Text" xml:space="preserve">
     <value>Search for Easter date</value>
+  </data>
+  <data name="TitleLabel.Text" xml:space="preserve">
+    <value>Software for search after Easter</value>
   </data>
 </root>

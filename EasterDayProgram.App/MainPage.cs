@@ -9,6 +9,7 @@ namespace EasterDayProgram.App
     /// </summary>
     public partial class MainPage : Form
     {
+        // Default Culture for the application is da-DK (danish)
         private CultureInfo Culture = new CultureInfo("da-DK");
         
         public MainPage()
@@ -31,7 +32,7 @@ namespace EasterDayProgram.App
         private void SearchAfterEaster()
         {
             //Get year
-            int year = dateTimePicker1.Value.Year;
+            int year = SelectYear.Value.Year;
 
             //Get Orthodox or Catholic.
             bool orthodox = orthodoxCheckbox.Checked;
@@ -50,22 +51,23 @@ namespace EasterDayProgram.App
 
         private void MainPage_Load(object sender, EventArgs e)
         {
-            comboBox1.Items.Add("Danish");
-            comboBox1.Items.Add("English");
-            comboBox1.SelectedIndex = 0;
+            LanguagesDropdown.Items.Add("Danish");
+            LanguagesDropdown.Items.Add("English");
+            LanguagesDropdown.SelectedIndex = 0;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedItem.ToString() == "Danish")
+            switch (LanguagesDropdown.SelectedItem.ToString())
             {
-                ChangeLanguage("da-DK");
-                Result.Text = string.Empty;
-            }
-            else
-            {
-                ChangeLanguage("en-US");
-                Result.Text = string.Empty;
+                case "Danish":
+                    ChangeLanguage("da-DK");
+                    Result.Text = string.Empty;
+                    break;
+                default:
+                    ChangeLanguage("en-US");
+                    Result.Text = string.Empty;
+                    break;
             }
         }
 
@@ -75,10 +77,10 @@ namespace EasterDayProgram.App
 
             foreach (var c in this.GetAllComponents())
             {
-                if(c is Control)
+                if(c is Control control)
                 {
                     ComponentResourceManager resources = new ComponentResourceManager(typeof(MainPage));
-                    resources.ApplyResources(((Control)c), ((Control)c).Name, new CultureInfo(lang));
+                    resources.ApplyResources(control, control.Name, new CultureInfo(lang));
                 }
             }
         }
